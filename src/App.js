@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Cover from './components/Cover';
+import Signup from './components/Signup';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Cover/>
+      <Signup/>
     </div>
   );
 }
