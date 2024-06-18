@@ -11,13 +11,15 @@ const Login = () => {
             setdata({...data,[event.target.name]:event.target.value})
     }
     const  readValue = ()=>{
-        axios.post("",data).then(
+        axios.post("http://localhost:8080/login",data).then(
             (response)=>{
                 if(response.data.status =="success"){
-                    alert("LOGGED IN")
+                    sessionStorage.setItem("token",response.data.token)
+                    sessionStorage.setItem("userid",response.data.userid)
+                    
                   navigate("/Printing")}
                 else{
-                    alert("ATTEMPT FAILED")}
+                    alert(response.data.status)}
                 
             }
         ).catch(
