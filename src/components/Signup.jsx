@@ -10,7 +10,7 @@ const Signup = () => {
             "batch":"",
             "year":"",
             "email":"",
-            "phn":"",
+            "phone":"",
             "password":"",
             "cpassword":""
         }
