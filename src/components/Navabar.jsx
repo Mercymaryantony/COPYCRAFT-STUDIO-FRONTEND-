@@ -13,10 +13,10 @@ const Navabar = () => {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/print">PRINT</Link>
+          <Link class="nav-link active" aria-current="page" to="/Printing">PRINT</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#">BINDING</Link>
+          <Link class="nav-link" to="/Binding">BINDING</Link>
         </li>
         <li class="nav-item">
           <Link class="nav-link" to="#">STATIONARY</Link>
