@@ -12,7 +12,7 @@ const Signup = () => {
             "email": "",
             "phnno": "",
             "password": "",
-            "cpassword": "",
+            "cpassword": ""
         }
     )
     const inputhandler = (event) => {
@@ -41,7 +41,7 @@ const Signup = () => {
                         <div className="row g-3">
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <label htmlFor="" className="form-label">Name</label>
-                                <input type="text" className="form-control" />
+                                <input type="text" className="form-control" placeholder='Enter your name'/>
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <label htmlFor="" className="form-label">Course</label>
@@ -73,11 +73,11 @@ const Signup = () => {
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <label htmlFor="" className="form-label">E-mail Id</label>
-                                <input type="text" className="form-control" />
+                                <input type="text" className="form-control" placeholder='Enter your E-mail Id'/>
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <label htmlFor="" className="form-label">Phone Number</label>
-                                <input type="text" className="form-control" />
+                                <input type="text" className="form-control" placeholder='Enter your Phone Number'/>
                             </div>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <label htmlFor="" className="form-label">Password</label>
@@ -90,8 +90,8 @@ const Signup = () => {
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <button className="btn btn-success">Register</button>
                             </div>
-                            <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <label htmlFor="" className="form-label">Back to<Link to='/login'>Login</Link></label>
+                            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <label htmlFor="" className="form-label"><b>Back to <Link to='/login'>Login</Link></b></label>
                             </div>
                         </div>
                     </div>
