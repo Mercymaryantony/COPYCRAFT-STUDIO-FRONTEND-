@@ -17,7 +17,7 @@ const Login = () => {
                     sessionStorage.setItem("token",response.data.token)
                     sessionStorage.setItem("userid",response.data.userid)
                     
-                  navigate("/printing")}
+                  navigate("/dashboard")}
                 else{
                     alert(response.data.status)}
                 
@@ -45,14 +45,12 @@ const Login = () => {
                             <input type="password" name="password" value={data.password} onChange={inputhandler} id="" className="form-control" />
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 placeholder-wave">
-                            <button className="btn btn-primary" onClick={readValue}>LOGIN</button>
+                        <Link to='/dashboard'>  <button className="btn btn-primary" onClick={readValue}>LOGIN</button></Link>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 placeholder-wave">
-                            <p>CLICK HERE TO CREATE A NEW ACCOUNT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to='/signup'><button className="btn btn-success">SIGNUP</button></Link> </p>
+                            <p>CLICK HERE TO CREATE A NEW ACCOUNT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button className="btn btn-success">SIGNUP</button> </p>
                         </div>
-                        <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 placeholder-wave">
-                            <p>CLICK HERE TO CREATE A NEW ACCOUNT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to='/printing'><button className="btn btn-success">SIGNUP</button></Link> </p>
-                        </div>
+                       
                         
                     </div>
                 </div>
