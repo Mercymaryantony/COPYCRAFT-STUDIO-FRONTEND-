@@ -15,6 +15,7 @@ const Signup = () => {
             "cpassword": ""
         }
     )
+    
     const inputhandler = (event) => {
         setData({ ...data, [event.target.name]: event.target.value })
     }
