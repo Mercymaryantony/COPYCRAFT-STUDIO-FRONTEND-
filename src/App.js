@@ -4,6 +4,8 @@ import Cover from './components/Cover';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Printing from './components/Printing';
+import Binding from './components/Binding';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Route path='/' element={<Cover/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/signup' element={<Signup/>} />
+      <Route path='/printing' element={<Printing/>}/>
+      <Route path='/binding' element={<Binding/>}/>
      </Routes>
      </BrowserRouter>
     </div>
