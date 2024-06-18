@@ -22,7 +22,7 @@ const Navabar = () => {
           <Link class="nav-link" to="#">SEARCH</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#">VIEW</Link>
+          <Link class="nav-link" to="/view">VIEW</Link>
         </li>
         <li class="nav-item ">
           <Link class="nav-link" to="#">ADMIN VIEW</Link>
