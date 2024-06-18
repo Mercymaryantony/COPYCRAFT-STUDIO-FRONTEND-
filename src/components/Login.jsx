@@ -4,23 +4,21 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
     const[data,setdata]=useState({
-        "email":"",
+        "name":"",
         "password":""
     })
     const inputhandler = (event)=>{
             setdata({...data,[event.target.name]:event.target.value})
     }
     const  readValue = ()=>{
-        axios.post("http://localhost:8080/login",data).then(
+        axios.post("",data).then(
             (response)=>{
-                if(response.data.status == "success"){
-                    sessionStorage.setItem("token",response.data.token)
-                    sessionStorage.setItem("userid",response.data.userid)
-                    navigate("/Printing")
-                }
+                if(response.data.status =="success"){
+                    alert("LOGGED IN")
+                  navigate("/Printing")}
                 else{
-                    alert(response.data.status)
-                }
+                    alert("ATTEMPT FAILED")}
+                
             }
         ).catch(
             (error)=>{
@@ -37,8 +35,8 @@ const Login = () => {
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div className="row g-3">
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <label htmlFor="" className="form-label"><b>EMAIL ID</b></label>
-                            <input type="text" className="form-control" name='email' value={data.email} onChange={inputhandler}/>
+                            <label htmlFor="" className="form-label"><b>USERNAME</b></label>
+                            <input type="text" className="form-control" name='name' value={data.name} onChange={inputhandler}/>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label htmlFor="" className="form-label"><b>PASSWORD</b></label>
