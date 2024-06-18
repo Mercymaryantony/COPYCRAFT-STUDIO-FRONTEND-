@@ -1,15 +1,16 @@
 import React from 'react'
+import Navbarcover from './Navbarcover'
 
 const Cover = () => {
     return (
         <div>
+          <Navbarcover/>
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <div className="row">
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                <br></br>
-                                <br></br>
+                                
                                 <br></br>
                                 <br></br>
                                 <br></br>
