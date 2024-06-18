@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
     const[data,setdata]=useState({
-        "name":"",
+        "email":"",
         "password":""
     })
     const inputhandler = (event)=>{
@@ -37,8 +37,8 @@ const Login = () => {
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div className="row g-3">
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <label htmlFor="" className="form-label"><b>USERNAME</b></label>
-                            <input type="text" className="form-control" name='name' value={data.name} onChange={inputhandler}/>
+                            <label htmlFor="" className="form-label"><b>EMAIL ID</b></label>
+                            <input type="text" className="form-control" name='email' value={data.email} onChange={inputhandler}/>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label htmlFor="" className="form-label"><b>PASSWORD</b></label>
