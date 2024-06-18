@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
     const[data,setdata]=useState({
@@ -12,13 +12,12 @@ const Login = () => {
     }
     const  readValue = ()=>{
         axios.post("",data).then(
-            (response)=>{
-                if(response.data.status =="success")
-                    alert("LOGGED IN")
-                else
-                    console.log("ATTEMPT FAILED")
+            ()=>{
+               alert("LOGGED IN")
+                  navigate("/Printing")}
                 
-            }
+                
+            
         ).catch(
             (error)=>{
                 console.log(error.message)
@@ -26,6 +25,7 @@ const Login = () => {
             }
         ).finally()
     } 
+    let navigate = useNavigate()
   return (
     <div>
         <div className="container">
