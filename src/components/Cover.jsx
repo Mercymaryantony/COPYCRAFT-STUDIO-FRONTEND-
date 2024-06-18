@@ -14,15 +14,15 @@ const Cover = () => {
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <h1><b>WELCOME TO COPYCRAFT STUDIO</b></h1>
+                                <h1><center><b>WELCOME TO COPYCRAFT STUDIO</b></center></h1>
                                 <br>
                             </br>
                             <br>
                             </br>
                             <br></br>
-                            <h2><b><u>ABOUT COPYCRAFT STUDIO</u></b></h2>
+                            <h2><b><u><center>ABOUT COPYCRAFT STUDIO</center></u></b></h2>
                             <br></br>
-                            <h3>THIS APP IS DEVELOPED FOR THE STUDENTS OF FISAT FOR EASE OF GETTING THINGS DONE. WE CAN USE THIS FOR PREBOOKING THE SLOTS FOR VARIOUS PURPOSES SUCH AS PRINTING , BINDING  ETC.</h3>
+                            <h3><center>THIS APP IS DEVELOPED FOR THE STUDENTS OF FISAT FOR EASE OF GETTING THINGS DONE. WE CAN USE THIS FOR PREBOOKING THE SLOTS FOR VARIOUS PURPOSES SUCH AS PRINTING , BINDING  ETC.</center></h3>
                             <br></br>
                             <br></br>
                             <br></br>
