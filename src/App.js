@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Printing from './components/Printing';
 import Binding from './components/Binding';
 import AdminPrintView from './components/AdminPrintView';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/printing' element={<Printing/>}/>
       <Route path='/binding' element={<Binding/>}/>
       <Route path='/printing/adminprintview' element={<AdminPrintView/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
      </Routes>
      </BrowserRouter>
   );
