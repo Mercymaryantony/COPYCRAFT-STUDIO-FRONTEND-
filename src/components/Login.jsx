@@ -17,7 +17,7 @@ const Login = () => {
                     sessionStorage.setItem("token",response.data.token)
                     sessionStorage.setItem("userid",response.data.userid)
                     
-                  navigate("/Printing")}
+                  navigate("/printing")}
                 else{
                     alert(response.data.status)}
                 
