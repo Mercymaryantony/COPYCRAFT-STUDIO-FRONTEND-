@@ -66,10 +66,10 @@ const Signup = () => {
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Year</label>
                             <select name="year" id="" className="form-control" value={data.year} onChange={inputhandler}>
-                                <option value="">1st</option>
-                                <option value="">2nd</option>
-                                <option value="">3rd</option>
-                                <option value="">4th</option>
+                                <option value="1st">1st</option>
+                                <option value="2nd">2nd</option>
+                                <option value="3rd">3rd</option>
+                                <option value="4th">4th</option>
                             </select>
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
