@@ -25,7 +25,7 @@ const Binding = () => {
         axios.post("http://localhost:8080/addbind ",data).then(
             (response)=>{
                 console.log(response.data)
-                if (response.data.status=="success")
+                if (response.data.status=="added")
                  {
                     alert("SUCCESSFULLY ADDED")
                 } else {
