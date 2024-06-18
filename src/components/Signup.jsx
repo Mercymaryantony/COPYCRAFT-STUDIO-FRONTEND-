@@ -20,18 +20,23 @@ const Signup = () => {
     }
     const readValue=()=>{
         console.log(data)
-
-        axios.post("http://localhost:8080/signup",data).then(
-            (response)=>{
-                console.log(response.data)
-                if (response.data.status=="success") {
-                    alert("Account created successfully")
-                    
-                } else {
-                    alert("Failed")
+        if (data.password==data.cpassword) {
+            axios.post("http://localhost:8080/signup",data).then(
+                (response)=>{
+                    console.log(response.data)
+                    if (response.data.status=="success") {
+                        alert("Account created successfully")
+                        
+                    } else {
+                        alert("Failed")
+                    }
                 }
-            }
-        )
+            )
+        } else {
+            alert("Incorrect Password")
+        }
+
+        
     }
   return (
     <div>
@@ -78,7 +83,7 @@ const Signup = () => {
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Phone Number</label>
-                            <input type="text" className="form-control" placeholder='Enter your phone number' name='phn' value={data.phn} onChange={inputhandler}/>
+                            <input type="text" className="form-control" placeholder='Enter your phone number' name='phone' value={data.phn} onChange={inputhandler}/>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label htmlFor="" className="form-label">Password</label>
