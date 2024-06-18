@@ -9,7 +9,6 @@ import Binding from './components/Binding';
 
 function App() {
   return (
-    <div>
      <BrowserRouter>
      <Routes>
       <Route path='/' element={<Cover/>} />
@@ -19,7 +18,6 @@ function App() {
       <Route path='/binding' element={<Binding/>}/>
      </Routes>
      </BrowserRouter>
-    </div>
   );
 }
 
