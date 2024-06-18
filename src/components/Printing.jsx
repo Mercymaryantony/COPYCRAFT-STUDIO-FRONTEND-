@@ -20,10 +20,10 @@ const Printing = () => {
       }
       const readValue=()=>{
         console.log(data)
-        axios.post(" ",data).then(
+        axios.post("http://localhost:8080/addprint",data).then(
             (response)=>{
                 console.log(response.data)
-                if (response.data.status=="success")
+                if (response.data.status=="added")
                  {
                     alert("SUCCESSFULLY ADDED")
                 } else {
@@ -76,7 +76,7 @@ const Printing = () => {
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">IMAGE/PDF</label>
-                            <input type="file" name="image" id="" className="form-control" value={data.image} onChange={inputHandler} />
+                            <input type="text" name="image" id="" className="form-control" value={data.image} onChange={inputHandler} />
                         </div>
                         <center>
                          <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
