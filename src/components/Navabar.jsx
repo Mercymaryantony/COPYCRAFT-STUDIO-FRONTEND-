@@ -19,9 +19,6 @@ const Navabar = () => {
           <Link class="nav-link" to="/Binding">BINDING</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#">STATIONARY</Link>
-        </li>
-        <li class="nav-item">
           <Link class="nav-link" to="#">SEARCH</Link>
         </li>
         <li class="nav-item">

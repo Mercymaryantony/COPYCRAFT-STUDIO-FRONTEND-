@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Navabar from './Navabar'
 
 const Binding = () => {
     const [data, setdata] = useState(
@@ -35,6 +36,7 @@ const Binding = () => {
       }
   return (
     <div>
+        <Navabar/>
         <center><h1>BINDING</h1></center>
         <div className="container">
             <div className="row">

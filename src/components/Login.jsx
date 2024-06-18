@@ -12,12 +12,14 @@ const Login = () => {
     }
     const  readValue = ()=>{
         axios.post("",data).then(
-            ()=>{
-               alert("LOGGED IN")
+            (response)=>{
+                if(response.data.status =="success"){
+                    alert("LOGGED IN")
                   navigate("/Printing")}
+                else{
+                    alert("ATTEMPT FAILED")}
                 
-                
-            
+            }
         ).catch(
             (error)=>{
                 console.log(error.message)
@@ -46,6 +48,7 @@ const Login = () => {
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 placeholder-wave">
                             <p>CLICK HERE TO CREATE A NEW ACCOUNT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to='/signup'><button className="btn btn-success">SIGNUP</button></Link> </p>
                         </div>
+                       
                     </div>
                 </div>
             </div>
