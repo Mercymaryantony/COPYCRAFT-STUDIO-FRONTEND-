@@ -25,10 +25,10 @@ const Navabar = () => {
           <Link class="nav-link" to="/searchbind">SEARCH BIND</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#">VIEW</Link>
+          <Link class="nav-link" to="/userprintview">USER PRINT VIEW</Link>
         </li>
         <li class="nav-item ">
-          <Link class="nav-link" to="#">ADMIN VIEW</Link>
+          <Link class="nav-link" to="/userbindview">USER BIND VIEW</Link>
         </li>
         <li class="nav-item ">
           <Link class="nav-link" to="adminprintview">ADMIN PRINT VIEW</Link>

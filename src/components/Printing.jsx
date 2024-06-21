@@ -50,21 +50,21 @@ const Printing = () => {
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">TYPE </label>
-                            <select name="type" id="" className="form-control" value={data.type} onChange={inputHandler}>
-                                <option value="COLOR PRINT">COLOR PRINT</option>
-                                <option value="BLACK AND WHITE">BLACK AND WHITE</option>
-                            </select>
+                            <select name="category" id="" className="form-control" value={data.category} onChange={inputHandler} >
+                            <option value="COLOR PRINT">COLOR PRINT</option>
+                            <option value="BLACK AND WHITE">BLACK AND WHITE</option>
+                           </select>
                         </div>
                          <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">NUMBER OF COPIES</label>
                             <input type="text" className="form-control" name='number' value={data.number} onChange={inputHandler} />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label">CATEGORY</label>
-                            <select name="category" id="" className="form-control" value={data.category} onChange={inputHandler}>
-                                <option value="URGENT">URGENT</option>
-                                <option value="NOT URGENT">NOT URGENT</option>
-                            </select>
+                        <label htmlFor="" className="form-label">CATEGORY</label>
+                           <select name="category" id="" className="form-control" value={data.category} onChange={inputHandler} >
+                            <option value="URGENT">URGENT</option>
+                            <option value="NOT URGENT">NOT URGENT</option>
+                           </select>
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">DATE</label>
