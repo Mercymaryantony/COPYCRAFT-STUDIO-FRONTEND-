@@ -9,6 +9,8 @@ import Binding from './components/Binding';
 import AdminPrintView from './components/AdminPrintView';
 import Dashboard from './components/Dashboard';
 import AdminBindView from './components/AdminBindView';
+import UserViewPrint from './components/UserViewPrint';
+import UserViewBind from './components/UserViewBind';
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
       <Route path='/printing/adminprintview' element={<AdminPrintView/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/adminbindview' element={<AdminBindView/>}/>
+      <Route path='/userprintview' element={<UserViewPrint/>}/>
+      <Route path='/userbindview' element={<UserViewBind/>}/>
+
      </Routes>
      </BrowserRouter>
   );
