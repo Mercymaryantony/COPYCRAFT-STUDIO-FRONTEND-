@@ -75,7 +75,7 @@ const AdminBindView = () => {
                                         <td>{value.date}</td>
                                         <td>{value.time}</td>
                                         <td>{value.image}</td>
-                                        <td><button className="btn btn-danger" onClick={()=>{deletebind(value._id)}}></button></td>
+                                        <td><button className="btn btn-danger" onClick={()=>{deletebind(value._id)}}>Delete</button></td>
                                     </tr>
                                     }
                                 )}
