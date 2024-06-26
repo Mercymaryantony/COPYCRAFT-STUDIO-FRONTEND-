@@ -51,7 +51,7 @@ const Signup = () => {
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Course</label>
-                            <select name="course" id="" className="form-control" value={data.course} onChange={inputhandler}>
+                            <select name='course' id="" className="form-control" value={data.course} onChange={inputhandler}>
                                 <option value="CS">CS</option>
                                 <option value="Civil">Civil</option>
                                 <option value="EC">EC</option>
@@ -83,7 +83,7 @@ const Signup = () => {
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Phone Number</label>
-                            <input type="text" className="form-control" placeholder='Enter your phone number' name='phone' value={data.phn} onChange={inputhandler}/>
+                            <input type="text" className="form-control" placeholder='Enter your phone number' name='phone' value={data.phone} onChange={inputhandler}/>
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label htmlFor="" className="form-label">Password</label>

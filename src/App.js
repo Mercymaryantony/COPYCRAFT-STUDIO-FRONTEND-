@@ -11,6 +11,8 @@ import Dashboard from './components/Dashboard';
 import AdminBindView from './components/AdminBindView';
 import UserViewPrint from './components/UserViewPrint';
 import UserViewBind from './components/UserViewBind';
+import AdminLogin from './components/AdminLogin';
+
 
 function App() {
   return (
@@ -21,11 +23,13 @@ function App() {
       <Route path='/signup' element={<Signup/>} />
       <Route path='/printing' element={<Printing/>}/>
       <Route path='/binding' element={<Binding/>}/>
-      <Route path='/printing/adminprintview' element={<AdminPrintView/>}/>
+      <Route path='/adminprintview' element={<AdminPrintView/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/adminbindview' element={<AdminBindView/>}/>
       <Route path='/userprintview' element={<UserViewPrint/>}/>
       <Route path='/userbindview' element={<UserViewBind/>}/>
+      <Route path='/adminlogin' element={<AdminLogin/>}/>
+      
 
      </Routes>
      </BrowserRouter>

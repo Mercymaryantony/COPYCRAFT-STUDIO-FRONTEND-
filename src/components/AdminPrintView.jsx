@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Navabar from './Navabar'
+import NavbarAdmin from './NavbarAdmin'
 
 const AdminPrintView = () => {
     const [data, changedata] = useState([])
@@ -34,7 +35,7 @@ const AdminPrintView = () => {
 
     return (
         <div>
-            <Navabar/>
+            <NavbarAdmin/>
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">

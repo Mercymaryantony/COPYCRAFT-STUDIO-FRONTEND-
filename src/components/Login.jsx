@@ -47,7 +47,7 @@ const Login = () => {
                                 <input type="password" name="password" value={data.password} onChange={inputhandler} id="" className="form-control" />
                             </div>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 placeholder-wave">
-                                <Link to='/dashboard'>  <button className="btn btn-primary" onClick={readValue}>LOGIN</button></Link>
+                              <button className="btn btn-primary" onClick={readValue}>LOGIN</button>
                             </div>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 placeholder-wave">
                                 <p>CLICK HERE TO CREATE A NEW ACCOUNT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to='/signup'><button className="btn btn-success">SIGNUP</button></Link> </p>

@@ -6,7 +6,17 @@ const Navbarcover = () => {
     <div>
 <ul class="nav nav-pills ">
   <li class="nav-item ms-auto">
-    <Link class="nav-link active" aria-current="page" to="/login">LOGIN</Link>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Login
+    </button>
+    <ul class="dropdown-menu">
+      <li><Link class="dropdown-item" to="/login">User Login</Link></li>
+      <li><Link class="dropdown-item" to="/adminlogin">Admin Login</Link></li>
+    </ul>
+  </div>
+
   </li>
 </ul>
     </div>
