@@ -30,12 +30,8 @@ const Navabar = () => {
         <li class="nav-item ">
           <Link class="nav-link" to="/userbindview">USER BIND VIEW</Link>
         </li>
-        <li class="nav-item ">
-          <Link class="nav-link" to="adminprintview">ADMIN PRINT VIEW</Link>
-        </li>
-        <li class="nav-item ">
-          <Link class="nav-link" to="/adminbindview">ADMIN BIND VIEW</Link>
-        </li>
+        
+        
       </ul>
     </div>
   </div>
