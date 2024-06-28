@@ -12,6 +12,8 @@ import AdminBindView from './components/AdminBindView';
 import UserViewPrint from './components/UserViewPrint';
 import UserViewBind from './components/UserViewBind';
 import AdminLogin from './components/AdminLogin';
+import Search from './components/Search';
+import SearchBind from './components/SearchBind';
 
 
 function App() {
@@ -29,6 +31,10 @@ function App() {
       <Route path='/userprintview' element={<UserViewPrint/>}/>
       <Route path='/userbindview' element={<UserViewBind/>}/>
       <Route path='/adminlogin' element={<AdminLogin/>}/>
+      <Route path='/searchprint' element={<Search/>}/>
+      <Route path='/searchbind' element={<SearchBind/>}/>
+   
+    
       
 
      </Routes>

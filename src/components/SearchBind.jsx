@@ -1,5 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Navabar from './Navabar'
+import NavbarBind from './NavbarBind'
 
 const SearchBind = () => {
     const [data, setData] = useState(
@@ -23,7 +25,8 @@ const SearchBind = () => {
     }
   return (
     
-        
+        <div>
+            <NavbarBind/>
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div className="row g-3"> 
@@ -72,6 +75,7 @@ const SearchBind = () => {
                                 </table>
                 </div>
             </div>
+        </div>
         </div>
         </div>
       
